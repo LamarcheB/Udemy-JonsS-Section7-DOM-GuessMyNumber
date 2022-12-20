@@ -34,8 +34,7 @@ let isGameOver = false;
 check.addEventListener("click", function () {
   const userGuess = Number(document.querySelector(".guess").value);
 
-    if (!
-    ) {
+  if (!isGameOver) {
     if (userGuess > 20 || userGuess < 1 || !userGuess) {
       msg.textContent = "Invalid entry, please enter a number between 1 and 20";
     } else {
